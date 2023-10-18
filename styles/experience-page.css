@@ -1,0 +1,57 @@
+.experience-page {
+  width: 60%;
+}
+.company-name {
+  text-decoration: none;
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0px 10px 2px;
+  border-left: 2px solid var(--lightest-navy);
+  background-color: transparent;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.company-name:hover {
+  background-color: var(--lightest-navy);
+  color: var(--maincolor);
+}
+.company-name-active {
+  color: var(--maincolor);
+  border-color: var(--maincolor);
+  transition: 1s ease;
+}
+.experience-content-container {
+  display: flex;
+  gap: 3rem;
+}
+.roles-responsiblity-container {
+  display: none;
+}
+.rrc-sub-heading {
+  margin-bottom: 25px;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+.experience-name-container {
+  padding: 0px;
+  margin: 0px;
+}
+.rrc-styles ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-size: var(--fz-lg);
+}
+
+#share-icon {
+  width: 8%;
+}

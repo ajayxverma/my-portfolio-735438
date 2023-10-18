@@ -1,0 +1,29 @@
+.about-page {
+  width: 70%;
+}
+.about-me-grid-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+}
+.tech-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0.3rem 1rem;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.tech-skill-grid li::before {
+  content: "▹";
+  left: 0px;
+  margin-right: 0.5rem;
+  color: var(--maincolor);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}
+.about-content-cell div {
+  margin-bottom: 1.5rem;
+}

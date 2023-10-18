@@ -1,0 +1,110 @@
+.projects-grid-page {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-grid-page .page-heading {
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-size: calc(var(--fz-heading) - 1.6rem);
+}
+
+.projects-grid-page .page-heading::after {
+  content: none;
+}
+
+.projects-grid-page .color-heading {
+  margin: 10px 0px;
+  color: var(--maincolor);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 500;
+}
+.project-grid-container {
+  width: 100%;
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  position: relative;
+  overflow: visible;
+}
+.project-card-content {
+  cursor: pointer;
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: inherit;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  transition: var(--transition);
+}
+.project-card-content:hover {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0px, -10px);
+}
+.project-card-style {
+  cursor: default;
+  transition: var(--transition);
+  position: relative;
+}
+.porject-card-header-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-card-heading {
+  font-size: var(--fz-xxl);
+  font-weight: 700;
+  color: var(--lightest-slate);
+  line-height: 1.1;
+}
+.card-icon-size {
+  width: 12%;
+}
+.project-card-content:hover .project-card-heading {
+  color: var(--maincolor);
+  transition: 0.3s ease;
+}
+.project-paragraph-container {
+  height: 7rem;
+  color: var(--light-slate);
+  font-weight: 500;
+  line-height: 1.75;
+  font-size: small;
+  overflow: auto;
+}
+.list-col-wise {
+  width: 100%;
+}
+.list-col-wise ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  gap: 0.2rem;
+  font-weight: 400;
+  font-family: var(--font-mono);
+  font-size: smaller;
+  list-style: none;
+}
+.list-col-wise ul li {
+  background-color: var(--light-navy-lighter);
+  padding: 0.25rem 0.7rem;
+  border-radius: 1rem;
+}

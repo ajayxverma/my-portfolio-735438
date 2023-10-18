@@ -1,0 +1,29 @@
+.contact-page {
+  width: 50%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-page .page-heading {
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: calc(var(--fz-heading) - 0.8rem);
+}
+.contact-page .page-heading::after {
+  content: none;
+}
+.contact-container .color-heading {
+  display: flex;
+  justify-content: center;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-me-button {
+  font-size: large;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}

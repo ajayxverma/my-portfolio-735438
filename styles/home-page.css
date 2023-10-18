@@ -1,0 +1,17 @@
+.content-page-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home-page {
+    width: 80%;
+}
+.home-page-button {
+  position: relative;
+  padding: 1.3rem;
+  font-size: var(--fz-sm);
+  margin-top: 2.2rem;
+}

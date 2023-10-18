@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+  .left-side-layout {
+    display: none;
+  }
+  .right-side-layout {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .home-page {
+    width: 85%;
+  }
+  .about-page {
+    width: 85%;
+  }
+  .experience-page {
+    width: 85%;
+    min-height: 80vh;
+  }
+  .contact-page {
+    width: 50%;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-side-layout {
+    display: none;
+  }
+  .right-side-layout {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .home-page {
+    width: 85%;
+  }
+  .about-page {
+    width: 85%;
+  }
+  .experience-page {
+    width: 85%;
+    min-height: 80vh;
+  }
+  .contact-page {
+    width: 50%;
+    min-height: 60vh;
+  }
+  .nav-menu-container-dv {
+    display: none;
+  }
+  .nav-menu-container-mv {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: var(--light-navy);
+    box-shadow: -10px 0px 30px -15px var(--navy-shadow);
+    width: min(75vw, 400px);
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0vw);
+    visibility: visible;
+    height: 100vh;
+    z-index: 9;
+    outline: 0px;
+    list-style: none;
+  }
+  .nav-mobile-content-container ol {
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mob-nav-container .profile-button {
+    margin: 0px;
+    padding: 1rem 3rem;
+  }
+  .nav-li-container a {
+    margin: 0px;
+    position: relative;
+    padding: 10px;
+    font-size: var(--fz-xl);
+    font-family: var(--font-mono);
+    color: var(--lightest-slate);
+  }
+  .nav-mobile-content-container ol li {
+    font-size: larger;
+  }
+  .nav-mobile-content-container {
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ham-icon-style {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(87, 97, 97, 0.219);
+    z-index: inherit;
+  }
+
+  .ham-button {
+  }
+  #main-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(5px);
+    overflow: hidden;
+  }
+}
