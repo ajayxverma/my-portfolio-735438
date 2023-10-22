@@ -196,10 +196,18 @@
   line-height: 1.5;
   font-size: var(--fz-heading);
 }
+.large-heading-below {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  line-height: 1.5;
+  font-size: var(--fz-heading);
+}
 .paragraph-style {
+  max-width: 40rem;
   font-family: var(--font-sans);
   font-weight: 500;
   font-size: var(--fz-md);
+  line-height: 1.6;
 }
 .page-heading {
   display: flex;

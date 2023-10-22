@@ -52,13 +52,27 @@ for (let i = 0; i < companyName.length; i++) {
 
 /* Code for Mobile Nav */
 
-const sideBarContainer = document.getElementsByClassName(
-  "nav-menu-container-mv"
-);
-const hamButton = document.getElementsByClassName("ham-icon-style");
-console.log(sideBarContainer);
-console.log(hamButton)
+const sideBarContainer = document.querySelector(".nav-menu-container-mv");
+const mainContent = document.getElementsByClassName("main-content-blur");
+console.log(`maincontent`,mainContent)
+/* Mobile Hanburger Menu toggle */
+const hamburger = document.querySelector(".hamburger");
 
-hamButton.addEventListener("click", () => {
-  sideBarContainer.style.display = "none";
-});
+// Function to toggle the "active" class
+function toggleHamburger() {
+  hamburger.classList.toggle("active");
+  if (
+    sideBarContainer.style.display === "none" ||
+    sideBarContainer.style.display === ""
+  ) {
+    setTimeout(() => {
+      sideBarContainer.style.display = "flex";
+      mainContent.classList.add("active");
+    }, 1);
+  } else {
+    sideBarContainer.style.display = "none";
+  }
+}
+
+// Add a click event listener to toggle the icon
+hamburger.addEventListener("click", toggleHamburger);
