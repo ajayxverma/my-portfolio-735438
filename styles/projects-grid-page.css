@@ -9,7 +9,6 @@
 .projects-grid-page .page-heading {
   justify-content: center;
   margin-bottom: 0.5rem;
-  font-size: calc(var(--fz-heading) - 1.6rem);
 }
 
 .projects-grid-page .page-heading::after {

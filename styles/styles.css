@@ -14,6 +14,10 @@
   transition: var(--transition);
   z-index: 12;
 }
+#main-content {
+  margin-top: var(--nav-height);
+
+}
 .main-header-container-inner-dv {
   display: flex;
   justify-content: space-between;
@@ -171,6 +175,7 @@
 }
 .main-container {
   display: flex;
+  gap: 5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -192,15 +197,16 @@
 .large-heading {
   color: var(--lightest-slate);
   font-family: var(--font-sans);
-  font-weight: 800;
-  line-height: 1.5;
-  font-size: var(--fz-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(40px, 8vw, 60px);
 }
 .large-heading-below {
+  color: var(--light-slate);
   font-family: var(--font-sans);
   font-weight: 800;
   line-height: 1.5;
-  font-size: var(--fz-heading);
+  font-size: clamp(40px, 8vw, 60px);
 }
 .paragraph-style {
   max-width: 40rem;
@@ -214,11 +220,13 @@
   align-items: center;
   width: 100%;
   margin-bottom: 3rem;
-  font-size: var(--fz-heading-top);
+  font-size: clamp(12px,5vw,var(--fz-heading-top));;
   color: var(--lightest-slate);
   font-weight: 800;
   white-space: nowrap;
 }
+
+
 
 .page-heading::after {
   content: "";
@@ -277,4 +285,9 @@
   font-size: var(--fz-xxs);
   text-align: center;
   line-height: 2;
+}
+
+.gap-between-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
