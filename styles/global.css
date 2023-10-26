@@ -54,6 +54,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Track */
+::-webkit-scrollbar {
+  width: 2px; /* Set the width of the scroll bar */
+}
+::-webkit-scrollbar:hover {
+  width: 4px; /* Set the width of the scroll bar */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: var(--dark-slate); /* Set the color of the scroll bar handle */
+  border-radius: 3px; /* Add rounded corners to the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--maincolor); /* Change the color on hover */
+}
 body {
   margin: 0;
   padding: 0;
