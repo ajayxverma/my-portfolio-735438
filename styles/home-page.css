@@ -6,7 +6,8 @@
   align-items: flex-start;
 }
 .home-page {
-    width: 80%;
+  width: 80%;
+  height: calc(100vh - var(--nav-height));
 }
 .home-page-button {
   position: relative;

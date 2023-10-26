@@ -246,7 +246,7 @@
   .about-me-grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     gap: 1rem;
   }
 
@@ -269,6 +269,10 @@
     border-color: var(--maincolor);
     transition: 1s ease;
   }
+
+  .home-page {
+    height: calc(90vh - var(--nav-height));
+  }
 }
 
 @media (max-width: 600px) {
@@ -279,7 +283,6 @@
     font-size: var(--fz-sm);
     font-weight: 600;
   }
-
 }
 
 @media (max-width: 450px) {
@@ -290,6 +293,4 @@
     font-size: var(--fz-sm);
     font-weight: 600;
   }
-
-
 }

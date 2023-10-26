@@ -51,6 +51,7 @@ html {
   background-color: var(--dark-navy);
   height: auto;
   transition: 0.7s ease;
+  scroll-behavior: smooth;
 }
 
 body {
