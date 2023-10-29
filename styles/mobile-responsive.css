@@ -247,7 +247,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .experience-content-container {
@@ -272,6 +272,15 @@
 
   .home-page {
     height: calc(90vh - var(--nav-height));
+  }
+
+  .about-image-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-image-cell img{
+    max-width: 300px;
   }
 }
 
