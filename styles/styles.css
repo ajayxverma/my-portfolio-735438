@@ -276,15 +276,16 @@
   text-align: center;
 }
 
+.nav-mobile-content-container {
+  display: none;
+}
+
 /* Footer Styels */
 .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-}
-.nav-menu-container-mv {
-  display: none;
 }
 .footer-content-contaienr {
   padding: 0.5rem;

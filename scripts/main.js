@@ -53,24 +53,31 @@ for (let i = 0; i < companyName.length; i++) {
 /* Code for Mobile Nav */
 
 const sideBarContainer = document.querySelector(".nav-menu-container-mv");
+const sideBarContainerContent = document.querySelector(
+  ".nav-mobile-content-container"
+);
 const mainContent = document.getElementsByClassName("main-content-blur");
-console.log(`maincontent`,mainContent)
+console.log(`maincontent`, mainContent);
 /* Mobile Hanburger Menu toggle */
 const hamburger = document.querySelector(".hamburger");
-
+sideBarContainerContent.style.display = "none";
+sideBarContainer.style.transition = "all 0.4s ease 0s;";
 // Function to toggle the "active" class
 function toggleHamburger() {
   hamburger.classList.toggle("active");
   if (
-    sideBarContainer.style.display === "none" ||
-    sideBarContainer.style.display === ""
+    sideBarContainer.style.width === "0px" ||
+    sideBarContainer.style.width === ""
   ) {
+    sideBarContainer.style.width = "min(85vw, 400px)";
+    sideBarContainer.style.transition =
+      "all 0.5s cubic-bezier(0.47, 0, 0.74, 0.71) 0s";
     setTimeout(() => {
-      sideBarContainer.style.display = "flex";
-      mainContent.classList.add("active");
-    }, 1);
+      sideBarContainerContent.style.display = "flex";
+    }, 300);
   } else {
-    sideBarContainer.style.display = "none";
+    sideBarContainerContent.style.display = "none";
+    sideBarContainer.style.width = "0px";
   }
 }
 
