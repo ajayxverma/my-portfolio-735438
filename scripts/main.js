@@ -53,6 +53,7 @@ for (let i = 0; i < companyName.length; i++) {
 /* Code for Mobile Nav */
 
 const sideBarContainer = document.querySelector(".nav-menu-container-mv");
+const sideBarContainerOl = document.querySelector(".nav-menu-container-mv ol");
 const sideBarContainerContent = document.querySelector(
   ".nav-mobile-content-container"
 );
@@ -80,6 +81,21 @@ function toggleHamburger() {
     sideBarContainer.style.width = "0px";
   }
 }
-
+document.addEventListener("click", (event) => {
+  if (
+    sideBarContainer.style.width === "min(85vw, 400px)" &&
+    sideBarContainerContent.style.display === "flex" &&
+    event.target !== sideBarContainer &&
+    event.target !== hamburger &&
+    event.target !== mainContent &&
+    event.target !== sideBarContainerContent &&
+    event.target !== sideBarContainerOl
+  ) {
+    sideBarContainerContent.style.display = "none";
+    sideBarContainer.style.width = "0px";
+    sideBarContainerContent.style.display === "none"
+    hamburger.classList.remove("active");
+  }
+});
 // Add a click event listener to toggle the icon
 hamburger.addEventListener("click", toggleHamburger);
