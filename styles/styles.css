@@ -315,3 +315,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.footer-content-contaienr .social-styled-list-icon {
+  display: none;
+}
