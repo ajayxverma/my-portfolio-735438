@@ -279,6 +279,14 @@
 .nav-mobile-content-container {
   display: none;
 }
+.nav-menu-container-mv {
+  display: none;
+}
+
+.ham-icon-style { 
+  display: none;
+}
+
 
 /* Footer Styels */
 .footer-container {
