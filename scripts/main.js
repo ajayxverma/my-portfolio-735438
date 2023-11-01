@@ -57,15 +57,18 @@ const sideBarContainerOl = document.querySelector(".nav-menu-container-mv ol");
 const sideBarContainerContent = document.querySelector(
   ".nav-mobile-content-container"
 );
-const mainContent = document.getElementsByClassName("main-content-blur");
-console.log(`maincontent`, mainContent);
+const mainContent = document.querySelector(".main-content");
 /* Mobile Hanburger Menu toggle */
 const hamburger = document.querySelector(".hamburger");
 sideBarContainerContent.style.display = "none";
 sideBarContainer.style.transition = "all 0.4s ease 0s;";
+
 // Function to toggle the "active" class
 function toggleHamburger() {
   hamburger.classList.toggle("active");
+  mainContent.classList.toggle("blur-content");
+  console.log(`This is mainContent: `, mainContent);
+  /* mainContent.classList.toggle("blur-content"); */
   if (
     sideBarContainer.style.width === "0px" ||
     sideBarContainer.style.width === ""
@@ -99,7 +102,26 @@ document.addEventListener("click", (event) => {
     sideBarContainer.style.width = "0px";
     sideBarContainerContent.style.display === "none";
     hamburger.classList.remove("active");
+    mainContent.classList.remove("blur-content");
   }
 });
 // Add a click event listener to toggle the icon
 hamburger.addEventListener("click", toggleHamburger);
+
+/* Adding NavBar Scrolling effect */
+const header = document.querySelector(".main-header-container-dv");
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+  const st = window.scrollY;
+
+  if (st > lastScrollTop) {
+    // Scrolling down
+    header.classList.add("header-hidden");
+  } else {
+    // Scrolling up
+    header.classList.remove("header-hidden");
+  }
+
+  lastScrollTop = st;
+});
